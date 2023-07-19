@@ -1,0 +1,24 @@
+{
+  "name": "my-first-app",
+  "version": "1.0.0",
+  "description": "test crud app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "DanNelson",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knoxvilledan/071823-Test-CRUD.git"
+  },
+  "bugs": {
+    "url": "https://github.com/knoxvilledan/071823-Test-CRUD/issues"
+  },
+  "homepage": "https://github.com/knoxvilledan/071823-Test-CRUD#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^5.7.0"
+  }
+}
