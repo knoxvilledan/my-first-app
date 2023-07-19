@@ -18,3 +18,17 @@ MongoClient.connect(url, function(err, db) {
   console.log("Database connected!");
   db.close();
 });
+
+
+app.get('/users', (req, res) => {
+  MongoClient.connect(url, function(err, db) {
+    if (err) throw err;
+    var dbo = db.db("test");
+    dbo.collection("users").find({}).toArray(function(err, result) {
+      if (err) throw err;
+      res.send(result);
+      db.close();
+    });
+  });
+});
+
